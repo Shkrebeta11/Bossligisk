@@ -71,7 +71,6 @@ button {
 
 .image {
     width: 700px;
-    height: 300px;
     background: #dff7ff;
     border-radius: 20px;
     display: flex;
@@ -79,6 +78,7 @@ button {
     align-items: center;
     font-size: 40px;
     color: #555;
+    object-fit: cover;
 }
 
 .banner {
@@ -109,6 +109,8 @@ button {
     width: 550px;
     position: relative;
     left: 120px;
+    margin-left: -300px;
+    margin-bottom: -50px;
 }
 
 .content {
@@ -138,7 +140,7 @@ button {
 
 .text p {
     margin-top: 20px;
-    color: #888;
+    color: #000;
     font-size: 18px;
 }
 
