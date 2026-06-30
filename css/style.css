@@ -5,9 +5,105 @@
     font-family: Arial, sans-serif;
 }
 
+.hero,
+.banner-text {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    top: -180px;
+    right: -180px;
+    z-index: 0;
+}
+
+.hero-bg img {
+    width: 1100px;
+    display: block;
+}
+
+.banner-btn {
+    display: inline-block;
+    padding: 18px 55px;
+    border-radius: 40px;
+    background: #2ec8ff;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.cta {
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-bg {
+    position: absolute;
+    right: -200px;
+    bottom: -150px;
+    z-index: 0;
+}
+
+.cta-bg img {
+    width: 1000px;
+}
+
+.cta-content,
+.cta-image {
+    position: relative;
+    z-index: 2;
+}
+
+.banner-text {
+    position: relative;
+    overflow: hidden;
+    padding: 120px 0;
+}
+
+.banner-bg {
+    position: absolute;
+    left: -180px;
+    bottom: -180px;
+    z-index: 0;
+}
+
+.banner-bg img {
+    width: 700px;
+    display: block;
+}
+
+.banner-bg img {
+    width: 650px;
+    display: block;
+}
+
+.hero .text,
+.hero .image,
+.banner-text .content {
+    position: relative;
+    z-index: 1;
+}
+
+.text-title {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.text-line {
+    width: 3px;
+    height: 170px;
+    background: #33c8ff;
+}
+
 body {
     background: white;
 }
+
+
 
 header {
     display: flex;
@@ -39,7 +135,7 @@ nav a {
 }
 
 .text {
-    width: 45%;
+    width: 550px;
 }
 
 h1 {
@@ -71,7 +167,6 @@ button {
 
 .image {
     width: 700px;
-    background: #dff7ff;
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -81,24 +176,27 @@ button {
     object-fit: cover;
 }
 
-.banner {
+.banner-text {
     position: relative;
+    overflow: hidden;
+    padding: 120px 0;
+    background: #fff;
+    /*
     z-index: 1;
     max-width: 1200px;
     width: 100%;
     height: 500px;
     margin: auto;
-    position: relative;
     display: flex;
     align-items: center;
     gap: 80px;
-    background: #fff;
+    background: #fff;*/
 }
 
 .image-box {
-    width: 470px;
+    width: 420px;
     height: 330px;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -106,19 +204,28 @@ button {
 }
 
 .image-box img {
-    width: 550px;
+    width: 350px;
     position: relative;
     left: 120px;
     margin-left: -300px;
     margin-bottom: -50px;
+    margin: 1rem;
 }
 
-.content {
+.content{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
     display: flex;
-    align-items: flex-start;
-    gap: 25px;
-    z-index: 1;
-    margin-left: 120px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+.content .text{
+    width: 50%;
+    max-width: 550px;
 }
 
 .line {
@@ -455,7 +562,7 @@ button {
 
 .newsletter input {
     flex: 1;
-    min-width:0;
+    min-width: 0;
     padding: 14px 20px;
     background: transparent;
     border: 1px solid #4b5563;
